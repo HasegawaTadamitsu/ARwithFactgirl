@@ -1,0 +1,46 @@
+postgres を使うまでのφ(..)メモメモ
+
+○initdb 
+
+patrush-inside% initdb --version
+initdb (PostgreSQL) 9.1.3
+
+patrush-inside% initdb -D ./data -E UTF8
+データベースシステム内のファイルの所有者は"hasegawa"ユーザでした。
+このユーザがサーバプロセスを所有しなければなりません。
+
+データベースクラスタはロケールja_JP.UTF-8で初期化されます。
+initdb: ロケール"ja_JP.UTF-8"用の適切なテキスト検索設定が見つかりません
+デフォルトのテキスト検索設定はsimpleに設定されました。
+
+....
+
+
+○起動
+ see postgresql.sh
+./postgresql.sh start
+
+
+○DBをつくる。
+createdb -h localhost
+
+○psql で接続確認　する。
+
+patrush-inside% psql 
+psql (9.1.3)
+"help" でヘルプを表示します.
+
+hasegawa=# \l
+ 
+
+
+
+○tableをつくる
+./createtable.sh
+
+○psqlで確認する。コメントも表示される。
+ \dd
+ \d+ aa10000
+
+ 
+

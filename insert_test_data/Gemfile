@@ -1,0 +1,10 @@
+source 'http://rubygems.org'
+
+gem 'pg'
+gem 'activerecord' ,'<4.0'
+gem 'composite_primary_keys'
+
+gem 'factory_girl'
+
+gem 'pry'
+
