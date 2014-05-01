@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 #class AA10000 < ActiveRecord::Base
 #  self.table_name = 'aa10000'
@@ -10,13 +11,10 @@
 #end
 
 
-class AA10000
-  belongs_to :indexxx,
-     class_name: 'AA45000',
+class Cお名前管理
+  belongs_to :インデックスとのヒモ付,
+     class_name: 'C索引',
     foreign_key: [ :ymd, :seq1, :seq2 ] ## AA10000's col
 #    primary_key: [ :ymd, :seq1, :seq2 ]  ## AA45000's col
-  accepts_nested_attributes_for :indexxx
+  accepts_nested_attributes_for :インデックスとのヒモ付
 end
-
-
-

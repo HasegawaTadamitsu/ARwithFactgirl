@@ -8,3 +8,8 @@ gem 'factory_girl'
 
 gem 'pry'
 
+
+
+gem 'faker'
+gem 'faker-japanese'
+
